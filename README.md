@@ -1,5 +1,5 @@
 # BDOA
-Lecture Big Data, orgnaisation and analysis
+Lecture Big Data, organisation and analysis
 
 
 ## Link to the online lectures

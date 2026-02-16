@@ -1,6 +1,6 @@
 # Lectures Informations
 
-## Lecture on 26. Feb. 2024
+## Lecture on 16. Feb. 2026
 
 Articles and special issue information that I presented:
 

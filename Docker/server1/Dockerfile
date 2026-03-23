@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:latest
 
 # set the working directory
 WORKDIR /code
@@ -10,5 +10,8 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 # copy the src to the folder
 COPY ./src ./src
 
+# expose the port the app will run on
+# EXPOSE 8080
+
 # start the server
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]

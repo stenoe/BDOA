@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   web:
     build: .
@@ -20,9 +18,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres-db:/var/lib/postgresql/data
+      - postgres_db:/var/lib/postgresql/data
 
 volumes:
-  postgres-db:
-
-
+  postgres_db:

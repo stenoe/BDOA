@@ -1,9 +1,9 @@
-FROM golang:1.22.2
+FROM golang:1.26
 
 WORKDIR /usr/src/app
 
-RUN go install github.com/cosmtrek/air@latest
+RUN go install github.com/air-verse/air@latest
 
-COPY . .
+COPY . . 
+
 RUN go mod tidy
-

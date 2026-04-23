@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"log"
+
+	"github.com/gofiber/fiber/v3"
 	"github.com/stenoe/server3/database"
 )
 
@@ -12,5 +14,5 @@ func main() {
 
 	setupRoutes(app)
 
-	app.Listen(":3000")
+	log.Fatal(app.Listen(":3000"))
 }
